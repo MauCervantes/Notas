@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Sign Up</title>
+
+        <!-- font-awesome cdn link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        <!-- bootstrap cdn link  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+    
+    </head>
+    <body>
+        <!-- header section starts -->
+        <header class="header fixed-top">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <a href="../../index.html" class="logo"> <img src="../assets/ofin.png"></a>
+        
+                    <nav class="nav">
+                        <a href="../../index.html">Login</a>
+                    </nav>
+        
+                    <div id="menu-btn" class="fas fa-bars"></div>
+                </div>
+            </div>
+        </header>
+        <!-- header section ends -->
+
+        <!-- signup section starts -->
+        <section class="signUp">
+            <div class="form-signup">
+                <div class="imagen">
+                        <img src="../assets/logo.png" alt="">
+                </div>
+                <h3 class="heading"> Registro </h3>
+
+                <div class="content">
+                    <form action="../../controller/signUp.php" id = "form_signup" method = "POST">
+                        <div class="user-details">
+
+                            <div class="input-box">
+                                <span class="details">User Name</span>
+                                <input type="text" placeholder="Ingrese usuario" id="in-user-name" name = "in-user-name" class = "textIn" required autocomplete="off">
+                            </div>
+
+                            <div class="input-box">
+                                <span class="details">Contraseña</span>
+                                <input type="password" class="password" placeholder="Ingrese contraseña" id="in-pass" name = "in-pass" required autocomplete="off">
+                                
+                            </div>
+
+                            <div class="input-box">
+                                <span class="details">Nombre</span>
+                                <input type="text" placeholder="Ingrese nombre" id="in-nombre" name = "in-nombre" class = "textIn" required autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="button">
+                            <input type="submit" name = "create-user" value="Registrar">
+                        </div>
+                        <div class="button">
+                            <input onclick="location.href='../../index.html'" type="submit" value="Cancelar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- signup section ends -->
+
+        <!-- custom js file link  -->
+        <script src="../js/signUp.js"></script>
+
+        <!-- custom css file link  -->
+        <link rel="stylesheet" href="../css/signUp.css">
+        
+    </body>
+</html>
